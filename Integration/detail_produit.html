@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <title>Détail produit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Donnez une nouvelle vie à vos appareils, acheter un ordinateur, smartphone
+  , tablette, etc… d’occassion avec AlteraVita ! Voici les détails du produit que vous avez choisi.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="detail_produit.css">
+  <script src="detail_produit.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+      <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+          src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+              <div class="row">
+                <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                  annonce</p>
+                <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br class="br-pc">Accueil</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                class="br-pc">Acheter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br class="br-pc">Réparer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br class="br-pc">Se
+              connecter</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Div qui contient le fil d'arianne -->
+  <div class="ArianeFile container">
+    <p>
+      <a href="home.html">Accueil</a> /
+      <a href="annonces.html#acheter">Annonces</a> /
+      Iphone 11
+    </p>
+    <hr>
+  </div>
+
+  <!-- Div qui regroupe les informations du produit à afficher -->
+  <div class="container productInfo">
+    <div class="imageView">
+      <div id="carouselImgsProduct" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselImgsProduct" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselImgsProduct" data-slide-to="1"></li>
+          <li data-target="#carouselImgsProduct" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imgProduct d-block w-100" src="img/telephone/telephone1.jpg" alt="smartphone">
+          </div>
+          <div class="carousel-item">
+            <img class="imgProduct d-block w-100" src="img/telephone/telephone2.jpg" alt="smartphone">
+          </div>
+          <div class="carousel-item">
+            <img class="imgProduct d-block w-100" src="img/telephone/telephone5.jpg" alt="smartphone">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselImgsProduct" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselImgsProduct" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Iphone 11</h1>
+      <p id="infoProduct">Smartphone 4G-LTE Advanced IP67</p>
+      <p id="desc">
+        Je revends mon iPhone 11 neuf 256 Go noir ( Boîte scellée) garantie 1 an chez Apple.
+        Pas d’envoi, remise en main propre uniquement et en espèces(pas de PayPal)
+        J’ai un détecteur de faux billets donc les petits malins passez votre chemin .
+      </p>
+      <p id="prix">750€</p>
+    </div>
+
+    <div class="row float-right" id="listButtons">
+      <button class="btn" id="buyButton" data-toggle="modal" data-target="#confirmationPurchase">Acheter <i
+          class="fa fa-chevron-circle-right fa-lg"></i></button>
+      <button class="btn">Réparer <i class="fa fa-chevron-circle-right fa-lg"></i></button>
+      <button class="btn" disabled>Acheter après réparation <i class="fa fa-chevron-circle-right fa-lg"></i></button>
+    </div>
+  </div>
+
+
+  <!-- Div qui affiche les infos sur le vendeur et les détails du produit -->
+  <div class="container productInfo" id="viewMoreInfos">
+    <nav class="nav nav-tabs" id="tabInfos">
+      <a class="nav-item nav-link active buttonNav" href="#p1" data-toggle="tab">Détails</a>
+      <a class="nav-item nav-link buttonNav" href="#p2" data-toggle="tab">Propriétaire</a>
+    </nav>
+    <div class="tab-content">
+      <div class="tab-pane active" id="p1">
+        <h1>Détails du produit&nbsp;:</h1>
+        <p><span>Etat&nbsp;: </span>neuf</p>
+        <p><span>Stockage&nbsp;: </span>64GO</p>
+        <p><span>Marque&nbsp;: </span>Apple</p>
+        <p><span>Année&nbsp;: </span>2019</p>
+      </div>
+
+      <div class="tab-pane" id="p2">
+        <a href="user.html">
+          <img src="img/icons8-person-64.png" alt="userImage" id="userProfileImage">
+          <span id="userName">Jean-David : </span>
+        </a>
+        <p>Description de l'utilisateur ...</p>
+        <button class="btn">Contacter <i class="fa fa-chevron-circle-right fa-lg"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PopUp content -->
+  <div class="modal fade" id="confirmationPurchase" tabindex="-1" role="dialog" aria-labelledby="confirmationPurchase"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popUpTitle">Confirmation d'achat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="popUpBeforePurchase">
+            <h1>Récapitulatif achat :</h1>
+            <p>Prix&nbsp;: 750€</p>
+            <p>Envoie&nbsp;: 3.50€</p>
+            <p>Total&nbsp;: 753.50€</p>
+            <br>
+            <h1>Choix mode de paiement&nbsp;:</h1>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="paypalCheckbox">Paypal
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="paymentCardCheckbox">Carte de paiement
+              </label>
+            </div>
+            <div class="alert alert-warning">
+              <strong>Erreur !</strong> Veuillez choisir un moyen de paiement&nbsp;!
+            </div>
+          </div>
+
+          <div id="popUpAfterPurchase">
+            <h1>Votre achat est validé&nbsp;!</h1>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary" id="confirmPayment">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="row">
+    <div class="entreprise first-3 col-3 p-0 align-self-center">
+      <p>Entreprise</p>
+      <a href="about.html">Qui sommes-nous ?</a>
+      <a href="">Garanties</a>
+      <a href="faq.html">FAQ</a>
+      <a href="inscription.html">Nous rejoindre</a>
+    </div>
+    <div class="legal first-3 col-3 p-0">
+      <p>Legal</p>
+      <a href="">CGV</a>
+      <a href="mentionslegales.html">Mentions légales</a>
+    </div>
+    <div class="contact first-3 col-3 p-0">
+      <p>Contact</p>
+      <a href="">SAV</a>
+      <a href="contact.html">Contactez-nous</a>
+    </div>
+    <div class="social col-3 p-0 align-self-center">
+      <a aria-label="Compte Twitter" href="https://twitter.com/AlteraVitaFR" target="_blank"><i
+          class="fab fa-twitter-square"></i></a>
+      <a aria-label="Compte Facebook" href="https://www.facebook.com/alteraVitaFR/" target="_blank"><i
+          class="fab fa-facebook-square"></i></a>
+    </div>
+    <div class="droits col-12 p-0 mb-2">
+      <p>© AlteraVita 2019. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

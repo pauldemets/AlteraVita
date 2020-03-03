@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Donnez une nouvelle vie à vos appareils, acheter un ordinateur, smartphone
+  , tablette, etc… d’occassion avec AlteraVita ! Voici la page d'accueil, c'est ici que vous pourrez voir les dernières annonces etc..">
+    <title>Accueil</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <!--  Barre de navigation du site web-->
+        <header>
+            <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+                <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+                        src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+                                <div class="row">
+                                    <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                                        annonce</p>
+                                    <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br
+                                    class="br-pc">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                                    class="br-pc">Acheter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br
+                                    class="br-pc">Réparer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br
+                                    class="br-pc">Se
+                                connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Carousel présentant les 3 principaux objectifs du site (écologique, pratique, efficace ) -->
+        <div class="promo">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/tree.jpg" alt="Colline">
+                        <div class="carousel-caption">
+                            <h3>Faîtes un geste pour l'environnement en donnant une nouvelle vie à vos appareils
+                                cassés&nbsp;!</h3>
+                            <button>
+                                <span class="row">
+                                    <span
+                                        class=" col-9 col-md-9 col-sm-9 p-0 mb-2 mt-2 align-self-center">Découvrir</span>
+                                    <i
+                                        class="fas fa-chevron-right col-3 col-md-3 col-sm-3 p-0 m-0 align-self-center blue"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/brokenPhone.jpeg" alt="Telephone cassé">
+                        <div class="carousel-caption">
+                            <h3>Vous faites de la place dans vos placards en vendant vos appareils inutilisés ou cassés
+                                !</h3>
+                            <button>
+                                <span class="row">
+                                    <span
+                                        class=" col-9 col-md-9 col-sm-9 p-0 mb-2 mt-2 align-self-center">Découvrir</span>
+                                    <i
+                                        class="fas fa-chevron-right col-3 col-md-3 col-sm-3 p-0 m-0 align-self-center blue"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/background_yellow.jpg" alt="tablette tactile">
+                        <div class="carousel-caption">
+                            <h3>Vous avez la possibilité de faire réparer votre appareil cassé par des particuliers ou
+                                des professionnels !</h3>
+                            <button>
+                                <span class="row">
+                                    <span
+                                        class=" col-9 col-md-9 col-sm-9 p-0 mb-2 mt-2 align-self-center">Découvrir</span>
+                                    <i
+                                        class="fas fa-chevron-right col-3 col-md-3 col-sm-3 p-0 m-0 align-self-center blue"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulaire permettant de s'inscrire à la newsletter AlteraVita -->
+        <div class="form-mail">
+            <p>Ne manquez plus rien de notre actualité, abonnez-vous : </p>
+            <form id="mc-embedded-subscribe-form"
+                action="https://gmail.us20.list-manage.com/subscribe/post?u=8459dec86c1009cd12a55ba03&amp;amp;id=3bed61517d"
+                method="post" target="_blank">
+                <div class="form-row">
+                    <div class="col-7 mb-md-0 mb-sm-0 offset-1"><input class="form-control form-control-lg" type="email"
+                            placeholder="Entrez votre adresse email..." name="EMAIL"></div>
+                    <div class="col-3 "><button class="btn btn-primary btn-block btn-lg blue-back" type="submit"
+                            value="Subscribe">S'abonner</button></div>
+                </div>
+            </form>
+            <p>* pas de spam</p>
+        </div>
+
+        <!-- Bloc contenant les dernières annonces ajoutées sur le site -->
+        <div class="ads">
+            <p>Dernières annonces</p>
+            <div class="boxes">
+                <div class="box">
+                    <img src="img/pc/pc8.png" alt="pc-cassé" class="img-ad">
+                    <p>Ordinateur Acer</p>
+                    <p>199,00 €</p>
+                    <hr>
+                    <button class="btn" onclick="location.href='detail_produit.html';">Voir l'annonce<img
+                            src="img/arrow-right.png" class="arrow" alt="arrow"></button>
+                </div>
+                <div class="box">
+                    <img src="img/pc/pc9.jpg" alt="pc-cassé" class="img-ad">
+                    <p>Ordinateur</p>
+                    <p>199,00 €</p>
+                    <hr>
+                    <button class="btn" onclick="location.href='detail_produit.html';">Voir l'annonce<img
+                            src="img/arrow-right.png" class="arrow" alt="arrow"></button>
+                </div>
+                <div class="box">
+                    <img src="img/tablette/tablette8.jpg" alt="tablette-cassé" class="img-ad">
+                    <p>Tablette samsung</p>
+                    <p>199,00 €</p>
+                    <hr>
+                    <button class="btn" onclick="location.href='detail_produit.html';">Voir l'annonce<img
+                            src="img/arrow-right.png" class="arrow" alt="arrow"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloc contenant différents avis d'utilisateurs à propos du site -->
+        <div class="tests">
+            <p>Ils ont testé pour vous</p>
+            <div class="boxes">
+                <div class="box-test">
+                    <div class="stars">
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Publié le 06/11/19</p>
+                    <hr>
+                    <p>"Très beau site je recommande"</p>
+                    <p>P.Didier</p>
+                </div>
+                <div class="box-test">
+                    <div class="stars">
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                    </div>
+                    <p>Publié le 08/11/19</p>
+                    <hr>
+                    <p>"Ce site est génial, je suis passionné de réparation et j'ai l'occasion d'exercer ici facilement
+                        !"</p>
+                    <p>Paulo</p>
+                </div>
+                <div class="box-test">
+                    <div class="stars">
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Publié le 09/11/19</p>
+                    <hr>
+                    <p>"pratique"</p>
+                    <p>AlexAllezOL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page du site web -->
+    <footer class="row">
+        <div class="entreprise first-3 col-3 p-0 align-self-center">
+            <p>Entreprise</p>
+            <a href="about.html">Qui sommes-nous ?</a>
+            <a href="">Garanties</a>
+            <a href="faq.html">FAQ</a>
+            <a href="inscription.html">Nous rejoindre</a>
+        </div>
+        <div class="legal first-3 col-3 p-0">
+            <p>Legal</p>
+            <a href="">CGV</a>
+            <a href="mentionslegales.html">Mentions légales</a>
+        </div>
+        <div class="contact first-3 col-3 p-0">
+            <p>Contact</p>
+            <a href="">SAV</a>
+            <a href="">Contactez-nous</a>
+        </div>
+        <div class="social col-3 p-0 align-self-center">
+            <a aria-label="Compte Twitter" href="https://twitter.com/AlteraVitaFR" target="_blank"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a aria-label="Compte Facebook" href="https://www.facebook.com/alteraVitaFR/" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="droits col-12 p-0 mb-2">
+            <p>© AlteraVita 2019. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+<script src="home.js"></script>
+
+</html>

@@ -1,0 +1,262 @@
+.infosUser {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 6px;
+    padding: 2%;
+    text-align: center;
+    box-shadow: 0px 2px 5px 3px #ccc;
+    font-family: 'Lato', sans-serif;
+}
+
+.infosUser p:nth-of-type(1) {
+    text-align: center;
+    font-size: 1.7vw;
+    margin-bottom: 3%;
+}
+
+.buttonNav {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.btn-left {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.infosUser button {
+    border: 0;
+    width: 15vw;
+    text-align: left;
+    padding: 1%;
+    padding-left: 2%;
+    font-size: 1.5vw;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.infosUser button i {
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    margin-right: 5%;
+    padding: 5%;
+    float: right;
+}
+
+.infosUser p {
+    text-align: left;
+    color: #727C8E;
+    font-size: 1.2vw;
+    margin-left: 2%;
+    text-indent: -2%;
+    font-family: 'Lato', sans-serif;
+}
+
+.infosUser p i {
+    padding-right: 1%;
+}
+
+#userImg {
+    margin-bottom: 2%;
+    width: 10%;
+    height: auto;
+    background-color: #B7E6E6;
+    border-radius: 50%;
+    padding: 1%;
+    transition: all 0.2s linear;
+}
+
+#userImg:hover {
+    transform: scale(1.2);
+}
+
+.line {
+    text-align: center;
+}
+
+.box-avis {
+    width: 30%;
+    border-radius: 5%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    display: inline-block;
+    margin-top: 2%;
+    height: 13vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+}
+
+.box-avis hr {
+    height: 0;
+    margin: -1.2ex 0;
+    padding: 0;
+    border: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.box-avis p:nth-of-type(1) {
+    font-size: 0.8vw;
+    margin: 0;
+    margin-top: 6%;
+    float: right;
+}
+
+.box-avis p:nth-of-type(2) {
+    margin-top: 5%;
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.box-avis p:nth-of-type(3) {
+    font-weight: 700;
+    float: left;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5%;
+    font-size: 1.2vw;
+}
+
+.stars {
+    width: 40%;
+    float: left;
+    font-size: 0.8vw;
+    margin-top: 6%;
+}
+
+.ad {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .125);
+    vertical-align: middle;
+    border-radius: 5%;
+    font-family: 'Lato', sans-serif;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    clear: both;
+}
+
+.ad img {
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.ad-details {
+    padding: 5%;
+    text-align: left;
+}
+
+.ad h5 {
+    font-weight: 700;
+}
+
+.ads-user {
+    text-align: left;
+    padding: 2%;
+    background-color: white;
+    border-radius: 6px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 2px 5px 3px #ccc;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #727C8E;
+}
+
+.ads-user h2 {
+    padding-bottom: 2%;
+}
+
+@media (max-width: 990px) {
+    .infosUser p:nth-of-type(1) {
+        font-size: 2.4vw;
+    }
+    .infosUser button {
+        width: 17vw;
+        font-size: 2vw;
+    }
+    .infosUser button i {
+        font-size: 2.2vw;
+    }
+    .infosUser p {
+        font-size: 1.8vw;
+    }
+    .box-avis p:nth-of-type(1) {
+        font-size: 1.3vw;
+    }
+    .box-avis p:nth-of-type(2) .box-avis p:nth-of-type(3) {
+        font-size: 1.8vw;
+    }
+    .stars {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .infosUser {
+        width: 90%;
+    }
+    #userImg {
+        width: 20%;
+    }
+    .infosUser p:nth-of-type(1) {
+        font-size: 4.2vw;
+    }
+    .infosUser button {
+        width: 30vw;
+        font-size: 4vw;
+    }
+    .infosUser button i {
+        font-size: 4.2vw;
+    }
+    .infosUser p {
+        font-size: 4vw;
+        margin-left: 5%;
+        text-indent: -5%;
+    }
+    .buttonNav {
+        font-size: 4vw;
+    }
+    .box-avis p:nth-of-type(1) {
+        font-size: 3vw;
+    }
+    .box-avis {
+        width: 100%;
+        height: 30vw;
+    }
+    .box-avis p:nth-of-type(2), .box-avis p:nth-of-type(3) {
+        font-size: 3.5vw;
+    }
+    .box-avis p:nth-of-type(3){
+        padding-bottom: 2%;
+    }
+    .stars {
+        font-size: 2.5vw;
+    }
+    .ads-user {
+        width: 90%;
+    }
+    .ad {
+        width: 45%;
+    }
+    .ad img {
+        height: 35vw;
+    }
+    .ad h5 {
+        font-size: 4vw;
+    }
+    .ads-user h2 {
+        font-size: 6vw;
+    }
+
+    
+}

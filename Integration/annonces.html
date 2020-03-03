@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Donnez une nouvelle vie à vos appareils, acheter un ordinateur, smartphone
+  , tablette, etc… d’occassion avec AlteraVita ! Réparer un appareils de votre choix!">
+
+  <title>Annonces</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="annonces.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+  <script src="scriptAnnonce.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="page-container">
+    <header>
+      <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+        <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+            src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+                <div class="row">
+                  <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                    annonce</p>
+                  <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br class="br-pc">Accueil</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                  class="br-pc">Acheter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br class="br-pc">Réparer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br class="br-pc">Se
+                connecter</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="ArianeFile">
+        <p>
+          <a href="home.html">Accueil</a> /
+          Annonces
+        </p>
+        <hr>
+      </div>
+      <div class="imgheader">
+        <img src="img/AdobeStock_204762912.jpeg" alt="Acheter ou Réparer en toute simplicité avec AlteraVita !">
+      </div>
+      <!--Formulaire du filtre des annonces-->
+      <div class="searchbox">
+        <div class="form">
+          <input id="search-annonce-bar" class="form-control mr-sm-2" onkeyup="searchFunction()" type="search"
+            placeholder="Ordinateur, Tablette, ..." aria-label="Rechercher">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label class="sr-only" for="marque">Marque</label>
+              <span class="chevron"></span>
+              <select id="marque" class="form-control">
+                <option selected>Marque</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="sr-only" for="etat">&Eacute;tat</label>
+              <span class="chevron"></span>
+              <select id="etat" class="form-control">
+                <option selected>&Eacute;tat</option>
+                <option>Neuf</option>
+                <option>Tr&egrave;s Bon</option>
+                <option>Bon</option>
+                <option>Satisfaisant</option>
+                <option>Mauvais</option>
+                <option>Tr&egrave;s Mauvais</option>
+              </select>
+            </div>
+          </div>
+          <!--Filtre avec le prix minimun et maximum-->
+          <div class="form-row prix">
+            <div class="input-group col-md-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">€</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Min">
+            </div>
+            <div class=" col-md-2 text-center">
+              <p> - </p>
+            </div>
+            <div class="input-group col-md-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">€</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Max">
+            </div>
+          </div>
+          <!--Fin du Filtre avec le prix minimun et maximum-->
+        </div>
+      </div>
+      <!-- Fin du formulaire-->
+      <!--Affichage des annonces-->
+      <div class="annonces">
+        <ul class="nav nav-tabs" id="annonces-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="nav-achat-tab" data-toggle="tab" href="#nav-achat" role="tab"
+              aria-controls="nav-achat" aria-selected="true">Acheter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-reparation-tab" data-toggle="tab" href="#nav-reparation" role="tab"
+              aria-controls="nav-reparation" aria-selected="false">R&eacute;parer</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="nav-tabContent">
+          <!-- Affichage des Annonces de Vente-->
+          <div class="tab-pane fade show active" id="nav-achat" role="tabpanel" aria-labelledby="nav-achat-tab">
+            <div class="d-flex flex-row flex-wrap justify-content-between bg-light">
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/pc/pc1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ordinateur ASUS</h5>
+                  <p class="card-text"> 299,00€</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/telephone/telephone2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Iphone</h5>
+                  <p class="card-text">399,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/tablette/tablette1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tablette ACER</h5>
+                  <p class="card-text">199,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/pc/pc2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ordinateur ASUS</h5>
+                  <p class="card-text"> 199,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/pc/pc3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ordinateur ACER</h5>
+                  <p class="card-text">199,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/telephone/telephone3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Smartphone Samsung</h5>
+                  <p class="card-text">256,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/tablette/tablette2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tablette Samsung</h5>
+                  <p class="card-text">279,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/telephone/telephone5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Iphone 11</h5>
+                  <p class="card-text">699,00 €</p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin des Annonces de Vente-->
+          <!--Affichage des Annoces de Réparation-->
+          <div class="tab-pane fade" id="nav-reparation" role="tabpanel" aria-labelledby="nav-reparation-tab">
+            <div class="d-flex flex-wrap flex-row justify-content-between bg-light">
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/pc/pc9.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ordinateur HP</h5>
+                  <p class="card-text"></p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i class="fas fa-wrench"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/pc/pc7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ordinateur ACER</h5>
+                  <p class="card-text"></p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i class="fas fa-wrench"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/telephone/telephone10.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Smartphone Samsung</h5>
+                  <p class="card-text"></p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i class="fas fa-wrench"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" height="265" src="img/tablette/tablette6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tablette Samsung</h5>
+                  <p class="card-text"></p>
+                  <a href="detail_produit.html" class="btn-annonce">Voir l'annonce <i class="fas fa-wrench"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin des Annoces de Réparation-->
+        </div>
+      </div>
+      <!--Fin de l'affichage des Annonces-->
+
+    </div>
+  </div>
+  <footer class="row">
+    <div class="entreprise first-3 col-3 p-0 align-self-center">
+      <p>Entreprise</p>
+      <a href="about.html">Qui sommes-nous ?</a>
+      <a href="">Garanties</a>
+      <a href="faq.html">FAQ</a>
+      <a href="inscription.html">Nous rejoindre</a>
+    </div>
+    <div class="legal first-3 col-3 p-0">
+      <p>Legal</p>
+      <a href="">CGV</a>
+      <a href="mentionslegales.html">Mentions légales</a>
+    </div>
+    <div class="contact first-3 col-3 p-0">
+      <p>Contact</p>
+      <a href="">SAV</a>
+      <a href="contact.html">Contactez-nous</a>
+    </div>
+    <div class="social col-3 p-0 align-self-center">
+      <a aria-label="Compte Twitter" href="https://twitter.com/AlteraVitaFR" target="_blank"><i
+          class="fab fa-twitter-square"></i></a>
+      <a aria-label="Compte Facebook" href="https://www.facebook.com/alteraVitaFR/" target="_blank"><i
+          class="fab fa-facebook-square"></i></a>
+    </div>
+    <div class="droits col-12 p-0 mb-2">
+      <p>© AlteraVita 2019. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,24 @@
+body{
+    font-family: 'Lato', sans-serif;
+  }
+.thread {
+    background: linear-gradient(-90deg,#3498db,85%, #727C8E);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-top: 3%;
+}
+
+h2 {
+    margin: 2% 0 2% 0;
+}
+
+.presentation {
+    width: 100%;
+}
+
+.presentation img {
+    width: 30%;
+    height: auto;
+}

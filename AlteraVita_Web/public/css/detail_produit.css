@@ -1,0 +1,202 @@
+body {
+  background-color: #f5f6f8;
+  font-family: 'Lato',sans-serif;
+  color : #727C8E;
+}
+
+.productInfo {
+  border-radius: 6px;
+  margin-bottom: 4%;
+  background-color:white;
+  width: 90%;
+  overflow: auto;
+  box-shadow: 0px 2px 5px 3px #ccc;
+  padding: 1%;
+}
+
+.imgProduct{
+  padding: 2%;
+  border-radius:1em;
+  height: 350px;
+}
+
+#prix {
+  font-weight: bold;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.content > h1 {
+  text-transform: uppercase;
+}
+
+
+#viewMoreInfos p  > span {
+  color: #3498db;
+  font-size: 1em;
+}
+
+.buttonNav {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.ArianeFile {
+  margin-top: 3%;
+  width: 80%;
+  margin-bottom: 2%;
+  font-size: 1.1em;
+}
+
+.ArianeFile a{
+  color: #3498db;
+  text-decoration: none;
+}
+
+.ArianeFile a:hover {
+  color: #1664aa;
+}
+
+#userName {
+  color: #3498db;
+}
+
+#viewMoreInfos a {
+  cursor: pointer;
+}
+
+#userProfileImage {
+  background-color: #B7E6E6;
+  border-radius: 50%;
+  margin-bottom: 0.75em;
+}
+
+.tab-pane button {
+  margin-bottom: 3%;
+}
+
+button i {
+  margin-left: 1em;
+}
+
+.tab-content h1 {
+  font-size: 1.15em;
+  text-decoration: underline;
+  margin-bottom: 2.5%;
+}
+
+.tab-pane {
+  display: inline;
+  margin-top: 1em;
+  padding-left: 3%;
+}
+
+#confirmationPurchase h1{
+  font-size: 1.75em;
+}
+
+.alert {
+  margin-top: 5%;
+  top: 0px;
+  position: relative;
+}
+
+#popUpAfterPurchase {
+  display: none;
+}
+
+@media (min-width: 576px) {
+
+  #carouselImgsProduct {
+    max-width: 25%;
+    min-width: 25%;
+    float: left;
+  }
+
+  #listButtons > button {
+    margin: 20px;
+    float: right;
+  }
+
+  #listButtons {
+    margin-top: 1%;
+  }
+
+  .content {
+    margin-left: 30%;
+  }
+
+  #prix {
+    padding-left: 70%;
+    font-size: 2.5vw;
+    margin-top: 10%;
+  }
+
+  #userName {
+    font-size: 1.2em;
+  }
+
+
+
+}
+
+@media (max-width: 576px) {
+  .imageView {
+    padding-top: 5%;
+  }
+
+  .imgProduct {
+    height: 350px;
+  }
+
+  .productInfo {
+    margin-bottom: 2.5em;
+  }
+
+  .content {
+    margin-top: 7%;
+    text-align: left;
+  }
+
+  #listButtons > button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8%;
+  }
+
+  .tab-content h1{
+    font-size: 1.1em;
+    margin-bottom: 8%;
+  }
+
+  #viewMoreInfos p  > span {
+    font-size: 1em;
+  }
+
+  #viewMoreInfos nav > a {
+    font-size: 1.25em;
+  }
+
+  #userProfileImage + span {
+    font-size: 0.9em;
+  }
+
+  #userProfileImage {
+    width: 15%;
+    margin-top: 0.5em;
+  }
+
+  #prix {
+    font-size: 2em;
+    text-align: center;
+  }
+
+}

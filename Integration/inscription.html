@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Donnez une nouvelle vie aux appareils avec ALteraVita, Inscriver-vous pour acheter ou réparer un appareil ">
+    <title>Connnexion</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="connexion.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+                <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+                        src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+                                <div class="row">
+                                    <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                                        annonce</p>
+                                    <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br
+                                    class="br-pc">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                                    class="br-pc">Acheter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br
+                                    class="br-pc">Réparer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br
+                                    class="br-pc">Se
+                                connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>S'inscrire</h1>
+            <!--Formulaire d'inscription-->
+            <div class="login-register-panel">
+                <div id="register-panel" class="panel">
+                    <h2>Inscription</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-4">
+                                <label class="sr-only" for="nameInput">Nom</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputNamePrepend"><i
+                                                class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="Nom"
+                                        aria-describedby="inputNamePrepend" required>
+                                    <div class="valid-tooltip"></div>
+                                    <div class="invalid-feedback">
+                                        Entrez votre nom
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="sr-only" for="firstnameInput">Pr&eacute;nom</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputFristNamePrepend"><i
+                                                class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="firstnameInput" placeholder="Prénom"
+                                        aria-describedby="inputFristNamePrepend" required>
+                                    <div class="invalid-feedback">
+                                        Entrez votre Pr&eacute;nom
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <label class="sr-only" for="emailInput">Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputEmailPrepend"><i
+                                                class="fas fa-at"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="emailInput" placeholder="Email"
+                                        aria-describedby="inputEmailPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Entrez votre adresse mail.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <label class="sr-only" for="adressInput">Adresse</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputAdressPrepend"><i
+                                                class="fas fa-address-book"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="adressInput" placeholder="Adresse"
+                                        aria-describedby="inputAdressPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Entrez votre addresse
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="sr-only" for="cityInput">Ville</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputCityPrepend"><i
+                                                class="fas fa-city"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="cityInput" placeholder="Ville"
+                                        aria-describedby="inputCityPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Dans quelle ville residez-vous ?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4 mr-4">
+                                <label class="sr-only" for="zipInput">Code Postal</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputZipPrepend"><i
+                                                class="fas fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="zipInput" placeholder="Code Postal"
+                                        aria-describedby="inputZipPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Entrez votre code postal.
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="passwdVerif" class="col-md-6 mb-4">
+                                <label class="sr-only" for="passwordInput">Mot de passe</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputPasswdPrepend"><i
+                                                class="fas fa-lock"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="passwordInput"
+                                        placeholder="Mot de passe" aria-describedby="inputPasswdPrepend" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}">
+                                    <div class="invalid-feedback">
+                                        Entrez un mot de passe!  Il doit contenir 7 caract&egrave;res avec au moins un chiffre, une majuscule et une miniscule 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="sr-only" for="passwordInputConfirmed">Confirmation du Mot de passe</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputConfirmPasswdPrepend"><i
+                                                class="fas fa-lock"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="passwordInputConfirmed"
+                                        placeholder="Confirmation du mot de passe"
+                                        aria-describedby="inputConfirmPasswdPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Saississez à nouveau votre mot de passe.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-lg btn-primary" type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <!--Fin du Formulaire d'inscription-->
+        </div>
+    </div>
+    <footer class="row">
+        <div class="entreprise first-3 col-3 p-0 align-self-center">
+            <p>Entreprise</p>
+            <a href="about.html">Qui sommes-nous ?</a>
+            <a href="">Garanties</a>
+            <a href="faq.html">FAQ</a>
+            <a href="inscription.html">Nous rejoindre</a>
+        </div>
+        <div class="legal first-3 col-3 p-0">
+            <p>Legal</p>
+            <a href="">CGV</a>
+            <a href="mentionslegales.html">Mentions légales</a>
+        </div>
+        <div class="contact first-3 col-3 p-0">
+            <p>Contact</p>
+            <a href="">SAV</a>
+            <a href="contact.html">Contactez-nous</a>
+        </div>
+        <div class="social col-3 p-0 align-self-center">
+            <a aria-label="Compte Twitter" href="https://twitter.com/AlteraVitaFR"><i class="fab fa-twitter-square"></i></a>
+            <a aria-label="Compte Facebook" href="https://www.facebook.com/alteraVitaFR/"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="droits col-12 p-0 mb-2">
+            <p>© AlteraVita 2019. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="scriptConnexion.js"></script>
+</body>
+
+
+</html>

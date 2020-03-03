@@ -1,0 +1,137 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.login-register-panel {
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 4% 8% 4%;
+    margin-bottom: 4%;
+}
+
+#login-panel,
+#contact-panel,
+#register-panel {
+    width: 100%;
+    border: solid #fff;
+    border-radius: 5%;
+    margin-bottom: 3%;
+    background-color: #fff;
+}
+
+.register {
+    margin-top: 3%;
+}
+
+.register p {
+    line-height: 5%;
+    font-size: 1.2em;
+}
+
+#login-panel h2,
+#contact-panel h2,
+#register-panel h2 {
+    border-bottom: solid #3498DB;
+    padding: 2%;
+}
+
+#login-panel>form,
+#contact-panel >form,
+#register-panel>form {
+    padding: 2%;
+}
+
+.btn-primary {
+    background-color: #3498DB;
+    border-width: 0;
+}
+
+.paswd-reset {
+    margin-bottom: 5%;
+}
+/* 
+*/
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 1.3em;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 1.3em;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 1.3em;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 1.3em;
+}
+
+a {
+    color: #3498DB;
+}
+
+@media screen and (min-width: 960px) {
+
+    #login-panel>form>.btn,
+    #contact-panel>form>.btn,
+    #register-panel>form>.btn {
+        position: relative;
+        left: 85%;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 959px) {
+
+    #login-panel>form>.btn,
+    #contact-panel>form>.btn,
+    #register-panel>form>.btn {
+        position: relative;
+        left: 60vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .g-recaptcha {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        position: relative;
+        right: 10%;
+
+    }
+
+    #login-panel>form>.btn,
+    #contact-panel>form>.btn,
+    #register-panel>form>.btn {
+        position: relative;
+        left: 45%;
+    }
+
+    .register p {
+        font-size: 1em;
+        line-height: .9em;
+    }
+}
+
+@media screen and (max-width : 350px) {
+
+    #login-panel>form>.btn,
+    #contact-panel>form>.btn,
+    #register-panel>form>.btn {
+        position: relative;
+        left: 34%;
+    }
+
+    .register p {
+        line-height: .9em;
+    }
+}

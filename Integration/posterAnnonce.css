@@ -1,0 +1,155 @@
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+.ad-infos {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.ad-infos p {
+    font-size: 1.5vw;
+    display: inline-block;
+    text-align: left;
+    margin-top: 2%;
+    color: #727C8E;
+}
+
+.ad-infos h1 {
+    color: #727C8E;
+    font-weight: 700;
+    text-align: center;
+}
+
+.new-ad {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 6px;
+    padding: 2%;
+    box-shadow: 0px 2px 5px 3px #ccc;
+    margin-bottom: 2%;
+}
+
+form {
+    font-family: 'Lato', sans-serif;
+    color: #727C8E;
+}
+
+form label {
+    font-weight: 700;
+    font-size: 1.4vw;
+}
+
+input[type=file],
+/* FF, IE7+, chrome (except button) */
+
+input[type=file]::-webkit-file-upload-button {
+    /* chromes and blink button */
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.was-validated .form-check-input:valid~.form-check-label {
+    color: #727C8E !important;
+}
+
+.new-ad-after {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.new-ad-after p {
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.new-ad-after button {
+    border: 0;
+    width: 15vw;
+    text-align: left;
+    padding: 1%;
+    padding-left: 2%;
+    font-size: 1.5vw;
+    border-radius: 30px;
+}
+
+.new-ad-after button i {
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    margin-right: 5%;
+    padding: 5%;
+    float: right;
+}
+
+@media (max-width: 990px) {
+    .ad-infos p {
+        font-size: 2vw;
+    }
+    form label {
+        font-size: 2vw;
+    }
+    .new-ad-after p {
+        font-size: 1.6vw;
+    }
+    .new-ad-after button {
+        font-size: 2vw;
+        width: 20vw;
+    }
+    .new-ad-after button i {
+        font-size: 2vw;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .ad-infos {
+        width: 90%;
+    }
+    .ad-infos h1 {
+        font-size: 8vw;
+    }
+    .ad-infos p {
+        font-size: 5vw;
+    }
+    .new-ad {
+        width: 90%;
+    }
+    form label {
+        font-size: 5vw;
+    }
+    .new-ad-after {
+        width: 90%;
+    }
+    .new-ad-after p {
+        font-size: 4vw;
+    }
+    .new-ad-after button {
+        width: 35vw;
+        padding: 2%;
+        padding-left: 4%;
+        font-size: 4vw;
+    }
+    .new-ad-after button i {
+        font-size: 4vw;
+        margin-right: 7%;
+        padding: 5%;
+        float: right;
+    }
+    input[type="checkbox"] {
+        height: 5vw;
+    }
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-size: 4vw !important;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Donnez une nouvelle vie à vos appareils, acheter un ordinateur, smartphone
+  , tablette, etc… d’occassion avec AlteraVita ! Vous voilà sur la page utilisateur.">
+
+    <title>Annonces</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+                <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+                        src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+                                <div class="row">
+                                    <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                                        annonce</p>
+                                    <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br
+                                    class="br-pc">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                                    class="br-pc">Acheter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br
+                                    class="br-pc">Réparer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br
+                                    class="br-pc">Se
+                                connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Informations de l'utilisateur ( Nom, Prénom, Région .. ) -->
+        <div class="infosUser">
+            <img src="img/icons8-person-64.png" alt="Photo utilisateur" id="userImg">
+            <p>Jean-David Pelot</p>
+            <p><i class="fas fa-search-location"></i>Nouvelle-Aquitaine</p>
+            <p><i class="fas fa-question"></i>Etant soucieux de faire un geste pour la planète, j'utilise ce site depuis
+                maintenant quelques mois afin de vendre de vieux appareils dont je ne me sers plus. </p>
+            <div class="btn-left">
+                <button class="blue-back">Contacter<i class="fa fa-chevron-right fa-lg blue"></i></button>
+            </div>
+            <div class="tabsAvis">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active buttonNav" id="avisVendeur-tab" data-toggle="tab" href="#avisVendeur"
+                            role="tab" aria-controls="avisVendeur" aria-selected="true">Avis vendeur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link buttonNav" id="avisReparateur-tab" data-toggle="tab" href="#avisReparateur"
+                            role="tab" aria-controls="avisReparateur" aria-selected="false">Avis réparateur</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active row" id="avisVendeur" role="tabpanel"
+                        aria-labelledby="avisVendeur-tab">
+                        <div class='line'>
+                            <div class="box-avis">
+                                <div class="stars">
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Publié le 09/11/19</p>
+                                <hr>
+                                <p>"Vendeur efficace et agréable"</p>
+                                <p>AlexAllezOL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="avisReparateur" role="tabpanel" aria-labelledby="avisReparateur-tab">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- liste des annonces postées par l'utilisateur -->
+        <div class="ads-user">
+            <h2>Annonces postées par l'utilisateur </h2>
+            <div class="line">
+                <div class="ad">
+                    <img class="ad-img-top" height="265" src="img/pc/pc1.jpg" alt="image produit">
+                    <div class="ad-body">
+                        <h5 class="ad-title">Ordinateur ASUS</h5>
+                        <p class="ad-text"> 299,00€</p>
+                        <a href="detail_produit.html" class="btn-ad">Voir l'annonce <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="ad">
+                    <img height="265" src="img/telephone/telephone2.jpg" alt="image produit">
+                    <div class="ad-body">
+                        <h5 class="ad-title">Iphone</h5>
+                        <p class="ad-text">399,00 €</p>
+                        <a href="detail_produit.html" class="btn-ad">Voir l'annonce <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="row">
+        <div class="entreprise first-3 col-3 p-0 align-self-center">
+            <p>Entreprise</p>
+            <a href="about.html">Qui sommes-nous ?</a>
+            <a href="">Garanties</a>
+            <a href="faq.html">FAQ</a>
+            <a href="inscription.html">Nous rejoindre</a>
+        </div>
+        <div class="legal first-3 col-3 p-0">
+            <p>Legal</p>
+            <a href="">CGV</a>
+            <a href="">Mentions légales</a>
+        </div>
+        <div class="contact first-3 col-3 p-0">
+            <p>Contact</p>
+            <a href="">SAV</a>
+            <a href="">Contactez-nous</a>
+        </div>
+        <div class="social col-3 p-0 align-self-center">
+            <a href="https://twitter.com/AlteraVitaFR"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com/alteraVitaFR/"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="droits col-12 p-0 mb-2">
+            <p>© AlteraVita 2019. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+<script src="user.js"></script>
+
+</html>

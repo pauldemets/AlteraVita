@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Donnez une nouvelle vie à vos appareils, acheter un ordinateur, smartphone
+  , tablette, etc… d’occassion avec AlteraVita ! Vous souhaitez poster une annonce ? C'est ici que ça se passe !">
+    <title>Poster une annonce</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="posterAnnonce.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3e9581cdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <nav class="navbar navbar-light bg-white navbar-expand-lg" id="header-nav">
+                <a class="navbar-brand" href="home.html"><img src="img/logoweb.png" alt="Logo pc" id="logo-desktop"><img
+                        src="img/logo.svg" alt="Logo pc" id="logo-mobile"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn blue-back" id="add-ad" href="posterAnnonce.html">
+                                <div class="row">
+                                    <p class=" col-8 col-md-8 col-sm-8 align-self-center ml-3 p-0 mb-0">Poster une
+                                        annonce</p>
+                                    <i class="fas fa-plus col-1 col-md-1 col-sm-1 align-self-center p-0 ml-2"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><i class="fas fa-home"></i><br
+                                    class="br-pc">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="annonces.html#acheter"><i class="fas fa-euro-sign"></i><br
+                                    class="br-pc">Acheter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="annonces.html#reparer"><i class="fas fa-tools"></i><br
+                                    class="br-pc">Réparer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connexion.html"><i class="fas fa-user-alt"></i><br
+                                    class="br-pc">Se
+                                connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Informations à propos de la possibilité de poster un annonce -->
+        <div class="ad-infos">
+            <h1>Poster une annonce </h1>
+            <p>Vous pouvez ajouter un produit cassé. Pour cela, veuillez préciser le nom du produit, une description,
+                une image ainsi que le problème à résoudre.
+                <br>
+                <br>
+                Vous avez la possibilité de le faire réparer ou de le revendre. Dans le dernier cas, veuillez indiquer
+                un prix de vente.
+            </p>
+        </div>
+
+        <!-- Formulaire d'ajout d'une nouvelle annonce -->
+        <form class="needs-validation" novalidate>
+            <div class="new-ad">
+                <div class="form-group">
+                    <label for="nameAd">TITRE</label>
+                    <input type="text" class="form-control" id="nameAd" placeholder="ex : Iphone 7..." required>
+                    <div class="invalid-feedback">
+                        Veuillez choisir un titre pour votre annonce
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="brandAd">MARQUE PRODUIT</label>
+                    <input type="text" class="form-control" id="brandAd" placeholder="ex : Samsung..." required>
+                    <div class="invalid-feedback">
+                        Veuillez renseigner la marque du produit en question
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="descriptionAd">DESCRIPTION</label>
+                    <textarea class="form-control" id="descriptionAd" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photosAd">PHOTO(S)</label>
+                    <input type="file" class="form-control-file" id="photosAd" multiple="multiple" required>
+                </div>
+                <div class="form-group">
+                    <label for="stateAd">ÉTAT</label>
+                    <select class="form-control" id="stateAd" required>
+                        <option value="">Veuillez choisir un état</option>
+                        <option value="neuf">Neuf</option>
+                        <option value="tresBon">Très bon</option>
+                        <option value="bon">Bon</option>
+                        <option value="mauvais">Mauvais</option>
+                        <option value="tresMauvais">Très mauvais</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Dans quel etat est votre appareil ?
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="issueAd">PROBLÈME</label>
+                    <input type="text" class="form-control" id="issueAd" placeholder="ex : Ecran fissuré...">
+                </div>
+                <div class="form-check form-check-inline mt-1">
+                    <input type="checkbox" class="form-check-input" id="fixAd" required>
+                    <label for="fixAd" class="form-check-label">RÉPARATION</label>
+                </div>
+                <div class="form-check form-check-inline mt-1">
+                    <input type="checkbox" class="form-check-input" id="sellAd" required>
+                    <label class="form-check-label" for="sellAd">VENTE</label>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="priceAd">PRIX</label>
+                    <input type="number" class="form-control" id="priceAd" placeholder="ex : 200 €..." required>
+                    <div class="invalid-feedback">
+                        A quel prix souhaitez-vous vendre votre appareil ?
+                    </div>
+                </div>
+            </div>
+            <div class="new-ad-after">
+                <p>Je confirme avoir lu et accepté les <span class="blue">Termes & Conditions</span> et <span
+                        class="blue">politique de
+                        confidentialité</span>.</p>
+                <button type="submit" class="btn btn-primary blue-back row">POSTER<i
+                        class="fa fa-chevron-right fa-lg blue"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="row">
+        <div class="entreprise first-3 col-3 p-0 align-self-center">
+            <p>Entreprise</p>
+            <a href="about.html">Qui sommes-nous ?</a>
+            <a href="">Garanties</a>
+            <a href="faq.html">FAQ</a>
+            <a href="inscription.html">Nous rejoindre</a>
+        </div>
+        <div class="legal first-3 col-3 p-0">
+            <p>Legal</p>
+            <a href="">CGV</a>
+            <a href="mentionslegales.html">Mentions légales</a>
+        </div>
+        <div class="contact first-3 col-3 p-0">
+            <p>Contact</p>
+            <a href="">SAV</a>
+            <a href="">Contactez-nous</a>
+        </div>
+        <div class="social col-3 p-0 align-self-center">
+            <a aria-label="Compte Twitter" href="https://twitter.com/AlteraVitaFR" target="_blank"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a aria-label="Compte Facebook" href="https://www.facebook.com/alteraVitaFR/" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="droits col-12 p-0 mb-2">
+            <p>© AlteraVita 2019. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+<script src="posterAnnonce.js"></script>
+
+</html>
