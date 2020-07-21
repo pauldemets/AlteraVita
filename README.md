@@ -1,15 +1,7 @@
-Projet DAWIN
+Projet DAWIN Green IT
 ==============================
+Le but de ce projet était de réaliser un site web en Laravel de vente et de réparation d'appareils IT(téléphones, tablettes, ordinateurs...) entre particuliers.
 
-
-### Obtenir ce projet
-
-Pour utiliser le dernier état de développement de ce projet, veuillez cloner la branche master.
-Notez que si le projet contient des sous-modules, utilisez les commandes suivantes :
-
-      git clone --recursive git@gitlab-ce.iut.u-bordeaux.fr:pdemets/alteravita.git
-      cd alteravita
-      
 ### Signaler un problème
 
 Nous recommandons vivement à tous les utilisateurs d'utiliser le système de tickets pour signaler tout problème 
